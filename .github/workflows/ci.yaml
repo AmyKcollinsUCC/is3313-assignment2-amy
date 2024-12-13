@@ -72,4 +72,4 @@ jobs:
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: |
-          git push https://heroku:$HEROKU_API_KEY@git.heroku.com/${{ vars.HEROKU_APP_NAME }}.git main
+          git push https://heroku:$HEROKU_API_KEY@git.heroku.com/${{ vars.HEROKU_APP_NAME }}.git HEAD:main
